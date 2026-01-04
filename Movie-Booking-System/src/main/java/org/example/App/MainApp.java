@@ -44,6 +44,7 @@ public class MainApp extends Application {
     // =========================
 
     private Scene showLoginPage() {
+
         VBox root = new VBox(25);
         root.setPadding(new Insets(50));
         root.setAlignment(Pos.CENTER);
@@ -428,12 +429,13 @@ public class MainApp extends Application {
         Label duration = new Label("⏱️ 片長：" + movie.duration + " 分鐘");
         duration.setStyle("-fx-text-fill: rgba(255,255,255,0.7);");
 
-        TextArea desc = new TextArea(movie.description);
-        desc.setWrapText(true);
-        desc.setEditable(false);
-        desc.setPrefRowCount(2);
-        desc.setStyle("-fx-control-inner-background: transparent; -fx-text-fill: rgba(255,255,255,0.7); " +
-                "-fx-border-color: transparent;");
+
+      Label desc = new Label(movie.description);
+      desc.setWrapText(true);
+      desc.setStyle(
+          "-fx-text-fill: rgba(255,255,255,0.8);" +
+              "-fx-font-size: 13;"
+      );
 
         Button bookBtn = createPrimaryButton("立即訂票");
 

@@ -580,11 +580,11 @@ public class BookingModule {
         RadioButton creditCard = new RadioButton("信用卡");
         creditCard.setToggleGroup(paymentGroup);
         creditCard.setSelected(true);
-        creditCard.setStyle("-fx-text-fill: white;");
+        creditCard.setStyle("-fx-text-fill: black;");
 
         RadioButton cash = new RadioButton("現場付款（示範）");
         cash.setToggleGroup(paymentGroup);
-        cash.setStyle("-fx-text-fill: white;");
+        cash.setStyle("-fx-text-fill: black;");
 
         VBox paymentOptions = new VBox(8, creditCard, cash);
 
